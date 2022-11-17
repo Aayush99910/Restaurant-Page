@@ -1,44 +1,8 @@
-export default function initialHomePage(instaIcon, facebookIcon, restroImage, food1) {
+export default function homePage(restroImage, food1) {
     // bigContainer which will have all the content of the page
     const bigContainer = document.querySelector("#content");
 
-
-
-
-    // header part of the content
-    const header = document.createElement("header");
-
-    // all the children for header
-    const titleContainer = document.createElement("div");
-    titleContainer.classList.add("title-container");
-    titleContainer.textContent = "FoodGhar";
-    const nav = document.createElement("nav"); 
-
-    // all the children for nav element
-    const home = document.createElement("p");
-    home.textContent = "Home";
-    const contacts = document.createElement("p");
-    contacts.textContent = "Contacts";
-    const iconsContainer = document.createElement("div");
-    iconsContainer.classList.add("icons-container");
-    
-    // all the children for iconsContainer
-    const instaImg = document.createElement("img"); 
-    const facebookImg = document.createElement("img"); 
-    instaImg.src = instaIcon;
-    facebookImg.src = facebookIcon;
-
-
-    // appending all the items to iconsContianer
-    iconsContainer.append(instaImg, facebookImg);
-
-    // appending all the children to nav
-    nav.append(home, contacts, iconsContainer);
-
-    // appending the children to head element
-    header.append(titleContainer, nav);
-
-
+    bigContainer.innerHTML = "";
 
 
     // body part of the content
@@ -119,5 +83,5 @@ export default function initialHomePage(instaIcon, facebookIcon, restroImage, fo
     
 
     // appending the header and the body to the bigContainer
-    bigContainer.append(header, bodyContainer);
+    bigContainer.append(bodyContainer);
 }
