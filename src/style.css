@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Gugi&family=Henny+Penny&family=Inter&family=Megrim&family=Pacifico&family=Petit+Formal+Script&family=Poor+Story&family=Roboto+Condensed&family=Roboto:wght@300&family=Salsa&display=swap');
+
+:root {
+    --header-bg-color: #992020;
+    --body-bg-color: #1B1919;
+    --active-tab-color: #363636;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.title-container {
+    font-family: 'Henny Penny', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+header nav,
+.icons-container {
+    display: flex;
+    width: 30%;
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav > p:hover,
+.menu-type > p:hover {
+    color: var(--active-tab-color);
+    cursor: pointer;
+}
+
+.body-container {
+    padding: 20px;
+    background-color: var(--body-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    background-color: white;
+    height: 400px;
+    width: 90%;
+}
+
+.menu-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-title-container > p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+.menu-type {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    gap: 30px;
+    background-color: var(--header-bg-color);
+    height: 40px;
+}
+
+.menu-type > p {
+    font-family: 'Dancing script', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.menu-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.menu-card {
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-card img {
+    height: auto;
+    width: 140px;
+    border-radius: 6px;
+    padding: 0px 10px 0px 10px;
+}
+
+.menu-card-about {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.title {
+    font-family: "Inter", cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.description {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #3F3B3B;
+}
