@@ -1,4 +1,8 @@
-export default function homePage(restroImage, food1) {
+import restroImage from "./assests/imgs/restro.jpg";
+import loadAllItems from "./loadItems";
+
+
+export default function homePage() {
     // bigContainer which will have all the content of the page
     const bigContainer = document.querySelector("#content");
 
@@ -34,13 +38,22 @@ export default function homePage(restroImage, food1) {
     // children of menuType
     const all = document.createElement("p");
     all.textContent = "All";
+    all.id = "all";
     const drinks = document.createElement("p");
-    drinks.textContent = "Drinks";
+    drinks.textContent = "Hot Drinks";
+    drinks.id = "drink";
     const beverages = document.createElement("p");
     beverages.textContent = "Beverages";
+    beverages.id = "beverages";
+    const pizza = document.createElement("p");
+    pizza.textContent = "Pizza";
+    pizza.id = "pizza";
+    const burger = document.createElement("p");
+    burger.textContent = "Burger";
+    burger.id = "burger";
 
     // appending the child to menuType
-    menuType.append(all, drinks, beverages);
+    menuType.append(all, drinks, beverages, pizza, burger);
 
     // appending the child to menuTitleContainer
     menuTitleContainer.append(menu, menuType);
@@ -50,38 +63,11 @@ export default function homePage(restroImage, food1) {
     const menuCardContainer = document.createElement("div");
     menuCardContainer.classList.add("menu-card-container");
 
-    // children of menuCardContainer
-    const menuCard = document.createElement("div");
-    menuCard.classList.add("menu-card");
-
-    // children of menuCard
-    const foodImage1 = document.createElement("img");
-    foodImage1.src = food1;
-    const menuCardAbout = document.createElement("div");
-    menuCardAbout.classList.add("menu-card-about");
-
-    // children of menuCardAbout
-    const title = document.createElement("p");
-    title.classList.add("title");
-    title.textContent = "DOUBLE SIZED CHICKEN BURGER";
-    const description = document.createElement("p");
-    description.classList.add("description");
-    description.textContent = "Some awesome desciption about the food and also includes the ingredients."; 
-
-    // appending children to menuCardAbout
-    menuCardAbout.append(title, description);
-
-    // appending children to menuCard
-    menuCard.append(foodImage1, menuCardAbout);
-
-    // appending the child to menuCardContainer
-    menuCardContainer.append(menuCard);
-
-
     //appending children to bodyContainer
-    bodyContainer.append(imageContainer, menuTitleContainer, menuCardContainer);
-    
+    bodyContainer.append(imageContainer, menuTitleContainer,menuCardContainer);
 
     // appending the header and the body to the bigContainer
     bigContainer.append(bodyContainer);
+
+    loadAllItems();
 }

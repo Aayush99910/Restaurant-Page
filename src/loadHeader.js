@@ -1,4 +1,8 @@
-export default function loadHeader(instaIcon, facebookIcon) {
+import instaIcon from "./assests/icons/instagram.png";
+import facebookIcon from "./assests/icons/facebook.png";
+
+
+export default function loadHeader() {
     const body = document.querySelector("body");
 
     // header part 

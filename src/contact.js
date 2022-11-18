@@ -1,4 +1,14 @@
-export default function contact (restroBackImage, instaIcon, facebookIcon, twitterIcon, tiktokIcon, whatsappIcon, UberEatsIcon) {
+import instaIcon from "./assests/icons/instagram.png";
+import facebookIcon from "./assests/icons/facebook.png";
+import twitterIcon from "./assests/icons/twitter.png";
+import tiktokIcon from "./assests/icons/tiktok.png";
+import UberEatsIcon from "./assests/icons/UberEats.png";
+import whatsappIcon from "./assests/icons/whatsapp.png";
+import restroBackImage from "./assests/imgs/restroBack.jpg"
+
+
+
+export default function contact () {
     // bigContainer which will have all the content of the page
     const bigContainer = document.querySelector("#content");
     bigContainer.innerHTML = "";
