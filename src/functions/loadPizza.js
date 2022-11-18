@@ -1,5 +1,5 @@
-import pizza1 from "./assests/imgs/pizza.jpg";
-import pizza2 from "./assests/imgs/pizza3.jpg";
+import pizza1 from "../assests/imgs/pizza.jpg";
+import pizza2 from "../assests/imgs/pizza3.jpg";
 
 
 const Pizza = [

@@ -1,13 +1,13 @@
-import food1 from "./assests/imgs/burger.jpg";
-import food2 from "./assests/imgs/cake.jpg";
-import food3 from "./assests/imgs/pizza.jpg";
-import food4 from "./assests/imgs/chicken.jpg";
-import food5 from "./assests/imgs/coffee.jpg";
-import food6 from "./assests/imgs/sandwich.jpg";
-import food7 from "./assests/imgs/tea.jpg";
-import food8 from "./assests/imgs/hotlemon.jpg";
-import food9 from "./assests/imgs/coke.jpg";
-import food10 from "./assests/imgs/bobatea.jpg";
+import food1 from "../assests/imgs/burger.jpg";
+import food2 from "../assests/imgs/cake.jpg";
+import food3 from "../assests/imgs/pizza.jpg";
+import food4 from "../assests/imgs/chicken.jpg";
+import food5 from "../assests/imgs/coffee.jpg";
+import food6 from "../assests/imgs/sandwich.jpg";
+import food7 from "../assests/imgs/tea.jpg";
+import food8 from "../assests/imgs/hotlemon.jpg";
+import food9 from "../assests/imgs/coke.jpg";
+import food10 from "../assests/imgs/bobatea.jpg";
 
 const Food = [
     {

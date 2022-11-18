@@ -1,10 +1,10 @@
-import instaIcon from "./assests/icons/instagram.png";
-import facebookIcon from "./assests/icons/facebook.png";
-import twitterIcon from "./assests/icons/twitter.png";
-import tiktokIcon from "./assests/icons/tiktok.png";
-import UberEatsIcon from "./assests/icons/UberEats.png";
-import whatsappIcon from "./assests/icons/whatsapp.png";
-import restroBackImage from "./assests/imgs/restroBack.jpg"
+import instaIcon from "../assests/icons/instagram.png";
+import facebookIcon from "../assests/icons/facebook.png";
+import twitterIcon from "../assests/icons/twitter.png";
+import tiktokIcon from "../assests/icons/tiktok.png";
+import UberEatsIcon from "../assests/icons/UberEats.png";
+import whatsappIcon from "../assests/icons/whatsapp.png";
+import restroBackImage from "../assests/imgs/restroBack.jpg"
 
 
 
@@ -15,7 +15,7 @@ export default function contact () {
 
     // bodyContainer
     const bodyContainer = document.createElement("div");
-    bodyContainer.classList.add("body-container");
+    bodyContainer.classList.add("contact-body-container");
 
     // first child of the bodyContainer
     const imageBackContainer = document.createElement("div");

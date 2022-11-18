@@ -1,4 +1,4 @@
-import restroImage from "./assests/imgs/restro.jpg";
+import restroImage from "../assests/imgs/restro.jpg";
 import loadAllItems from "./loadItems";
 import loadHotDrinks from "./loadHotDrinks.js";
 import loadBeverages from "./loadBeverages.js";
@@ -15,7 +15,7 @@ export default function homePage() {
 
     // body part of the content
     const bodyContainer = document.createElement("div");
-    bodyContainer.classList.add("body-container");
+    bodyContainer.classList.add("home-body-container");
 
     // first child of the body
     const imageContainer = document.createElement("div");
@@ -74,6 +74,12 @@ export default function homePage() {
     bigContainer.append(bodyContainer);
 
     loadAllItems();
+
+    // eventListener for allItems
+    const allItemsTab = document.querySelector("#all");
+    allItemsTab.addEventListener("click", function () {
+        loadAllItems();
+    });
 
     // eventListener for hotDrinks
     const hotDrinksTab = document.querySelector("#drink");

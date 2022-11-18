@@ -1,5 +1,5 @@
-import beverages1 from "./assests/imgs/coke.jpg";
-import beverages2 from "./assests/imgs/bobatea.jpg";
+import beverages1 from "../assests/imgs/coke.jpg";
+import beverages2 from "../assests/imgs/bobatea.jpg";
 
 
 const Beverages = [

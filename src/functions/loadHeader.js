@@ -1,5 +1,5 @@
-import instaIcon from "./assests/icons/instagram.png";
-import facebookIcon from "./assests/icons/facebook.png";
+import instaIcon from "../assests/icons/instagram.png";
+import facebookIcon from "../assests/icons/facebook.png";
 
 
 export default function loadHeader() {
@@ -24,15 +24,15 @@ export default function loadHeader() {
     const iconsContainer = document.createElement("div");
     iconsContainer.classList.add("icons-container");
     
-    // all the children for iconsContainer
+    // // all the children for iconsContainer
     const instaImg = document.createElement("img"); 
-    const facebookImg = document.createElement("img"); 
+    // const facebookImg = document.createElement("img"); 
     instaImg.src = instaIcon;
-    facebookImg.src = facebookIcon;
+    // facebookImg.src = facebookIcon;
 
 
     // appending all the items to iconsContianer
-    iconsContainer.append(instaImg, facebookImg);
+    iconsContainer.append(instaImg);
 
     // appending all the children to nav
     nav.append(home, contacts, iconsContainer);

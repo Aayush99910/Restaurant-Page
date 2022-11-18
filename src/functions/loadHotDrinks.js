@@ -1,6 +1,6 @@
-import drink1 from "./assests/imgs/hotlemon.jpg";
-import drink2 from "./assests/imgs/tea.jpg";
-import drink3 from "./assests/imgs/coffee.jpg";
+import drink1 from "../assests/imgs/hotlemon.jpg";
+import drink2 from "../assests/imgs/tea.jpg";
+import drink3 from "../assests/imgs/coffee.jpg";
 
 const Drink = [
     {
