@@ -1,5 +1,9 @@
 import restroImage from "./assests/imgs/restro.jpg";
 import loadAllItems from "./loadItems";
+import loadHotDrinks from "./loadHotDrinks.js";
+import loadBeverages from "./loadBeverages.js";
+import loadBurger from "./loadBurger.js";
+import loadPizza from "./loadPizza.js";
 
 
 export default function homePage() {
@@ -70,4 +74,30 @@ export default function homePage() {
     bigContainer.append(bodyContainer);
 
     loadAllItems();
+
+    // eventListener for hotDrinks
+    const hotDrinksTab = document.querySelector("#drink");
+    hotDrinksTab.addEventListener("click", function () {
+        loadHotDrinks();
+    });
+
+        // eventListener for Beverages
+    const beveragesTab = document.querySelector("#beverages");
+    beveragesTab.addEventListener("click", function () {
+        loadBeverages();
+    });
+
+
+    // eventListener for Beverages
+    const pizzaTab = document.querySelector("#pizza");
+    pizzaTab.addEventListener("click", function () {
+        loadPizza();
+    });
+
+
+    // eventListener for Beverages
+    const burgerTab = document.querySelector("#burger");
+    burgerTab.addEventListener("click", function () {
+        loadBurger();
+    });
 }

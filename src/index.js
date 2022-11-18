@@ -2,15 +2,15 @@
 import "./style.css";
 
 // importing the module
-import homePage from "./homepage.js";
-import loadHeader from "./loadHeader.js";
-import loadFooter from "./footer.js";
-import contact from "./contact.js";
-import loadAllItems from "./loadItems.js";
-import loadHotDrinks from "./loadHotDrinks.js";
-import loadBeverages from "./loadBeverages.js";
-import loadBurger from "./loadBurger.js";
-import loadPizza from "./loadPizza.js";
+import homePage from "./functions/homepage.js";
+import loadHeader from "./functions/loadHeader.js";
+import loadFooter from "./functions/footer.js";
+import contact from "./functions/contact.js";
+import loadAllItems from "./functions/loadItems.js";
+import loadHotDrinks from "./functions/loadHotDrinks.js";
+import loadBeverages from "./functions/loadBeverages.js";
+import loadBurger from "./functions/loadBurger.js";
+import loadPizza from "./functions/loadPizza.js";
 
 // loads Header and homepage as default
 loadHeader();
@@ -34,7 +34,6 @@ contactTab.addEventListener("click", function () {
 // eventListener for allItems
 const allItemsTab = document.querySelector("#all");
 allItemsTab.addEventListener("click", function () {
-    console.log("I");
     loadAllItems();
 });
 
@@ -42,7 +41,6 @@ allItemsTab.addEventListener("click", function () {
 // eventListener for hotDrinks
 const hotDrinksTab = document.querySelector("#drink");
 hotDrinksTab.addEventListener("click", function () {
-    console.log("I");
     loadHotDrinks();
 });
 
